@@ -1,0 +1,39 @@
+.morumotto-umbrella-bar {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 7px 18px;
+  background: #16241d;
+  color: #fff;
+  font-family: Inter, Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .02em;
+  text-align: center;
+}
+.morumotto-umbrella-bar a { color: #f2c477; text-decoration: none; font-weight: 900; }
+.morumotto-umbrella-bar a:hover { text-decoration: underline; }
+@media(max-width:520px){.morumotto-umbrella-bar{font-size:10px;gap:7px;padding-inline:10px}}
+
+.language-social{padding:74px 0;background:#eee8de}
+.language-social-card{display:grid;grid-template-columns:180px 1fr;gap:34px;align-items:center;padding:34px;border:1px solid #ded8ce;border-radius:8px 28px 28px 28px;background:#fcfbf8;box-shadow:0 22px 60px rgba(26,42,34,.11)}
+.language-social-card img{width:180px;height:180px;object-fit:cover;border:5px solid #fff;border-radius:50%;box-shadow:0 10px 28px rgba(24,34,29,.16)}
+.language-social-card h2{margin:7px 0 8px;font-size:clamp(32px,4.2vw,50px);line-height:1.03;letter-spacing:-.045em}
+.language-social-card p{margin:0 0 18px;color:#626862}
+.language-social-card .button{display:inline-flex;width:auto}
+@media(max-width:620px){.language-social-card{grid-template-columns:1fr;padding:24px;text-align:center}.language-social-card img{width:140px;height:140px;margin:auto}.language-social-card .button{justify-self:center}}
+
+.classes-section{padding:86px 0;background:#e6ede2}
+.classes-head{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:end;margin-bottom:30px}
+.classes-head h2{margin:8px 0 0;font-size:clamp(40px,5.5vw,62px);line-height:1;letter-spacing:-.05em}
+.classes-head>p{margin:0;color:#626862;font-size:16px}
+.class-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.class-card{display:flex;flex-direction:column;padding:30px;border:1px solid #ded8ce;border-radius:8px 25px 25px 25px;background:#fcfbf8;box-shadow:0 10px 30px rgba(49,42,34,.08)}
+.class-card.private-class{border-top:5px solid #b4563a}.class-card.group-class{border-top:5px solid #e1b65f}
+.class-label{align-self:flex-start;padding:6px 10px;border-radius:999px;background:#e9eee7;color:#303a34;font-size:10px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.class-card h3{margin:17px 0 6px;font-size:29px;letter-spacing:-.04em}.class-price{display:flex;align-items:baseline;gap:10px;margin:4px 0 12px}.class-price strong{font-size:38px}.class-price span{color:#626862;font-size:13px;font-weight:800}
+.class-card>p,.class-card li{color:#626862}.class-card ul{flex:1;padding-left:19px}.class-card .button{width:100%}
+.student-voices{display:grid;grid-template-columns:.65fr 1.35fr;gap:22px;align-items:center;margin-top:22px;padding:26px;border-radius:6px 22px 22px 22px;background:#303a34;color:#fff}.voices-heading h3{margin:4px 0 0;font-size:29px}.student-voices .kicker{color:#e5ae91}.voice-card{padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.09)}.voice-card p{margin:4px 0 8px;color:#dfe7e1;font-size:13px}.voice-card a{color:#e5c280;font-size:12px;font-weight:900}.class-note{margin:15px 0 0;color:#626862;font-size:11px}
+@media(max-width:760px){.classes-head,.student-voices{grid-template-columns:1fr}}@media(max-width:620px){.class-grid{grid-template-columns:1fr}.class-card{padding:24px}}
