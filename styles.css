@@ -117,6 +117,7 @@ h1 em { display: block; color: var(--forest); font-family: Georgia, serif; font-
 .pin.jp { top: 43px; right: 40px; transform: rotate(5deg); }
 .pin.es { left: 35px; bottom: 66px; background: var(--gold); color: var(--ink); transform: rotate(-5deg); border-color: var(--ink); }
 .pin.cn { right: 33px; bottom: 49px; background: #e85b54; transform: rotate(4deg); }
+.pin.en { left: 32px; top: 112px; background: #527ca4; transform: rotate(3deg); }
 .world-note { position: absolute; left: 27px; top: 28px; max-width: 190px; color: #e5eee9; font-size: 13px; }
 
 .signal-bar { border-block: 1px solid var(--line); background: var(--paper); }
@@ -241,6 +242,8 @@ section { padding: 88px 0; }
 body.japanese { --country-accent: #b74437; --country-soft: #f2ded9; }
 body.spanish { --country-accent: #b7681d; --country-soft: #f4e4bf; }
 body.chinese { --country-accent: #b33b35; --country-soft: #f1d4cb; }
+body.english { --country-accent: #315d83; --country-soft: #dce8f2; }
+.text-only-social { grid-template-columns: 1fr; }
 
 @media (max-width: 900px) {
   .nav-links a:not(.button) { display: none; }
@@ -330,6 +333,7 @@ body.chinese { --country-accent: #b33b35; --country-soft: #f1d4cb; }
 .redesign-2026 .language-card:first-child { grid-column: 1 / -1; min-height: 370px; padding-right: 44%; background: linear-gradient(115deg, #fffdf8 0 56%, #eadfd2 56%); }
 .redesign-2026 .language-card:first-child::after { right: 9%; top: 25px; color: rgba(183,68,55,.15); font-size: 270px; }
 .redesign-2026 .language-card h3 { font-size: 38px; }
+.redesign-2026 .language-card:nth-child(4) { background: linear-gradient(145deg,#fffdf8,#e4edf5); }
 .redesign-2026 .country-badge { background: var(--gold); }
 .redesign-2026 .process { background: #0f2921; }
 .redesign-2026 .process-step { border-radius: 6px 22px 22px 22px; }
