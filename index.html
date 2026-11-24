@@ -13,6 +13,9 @@
     .brand { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 52px; }
     .brand-mark { display: grid; place-items: center; width: 80px; height: 86px; flex-shrink: 0; background: #f3ca70; border: 3px solid #142b24; border-radius: 29px 29px 29px 8px; transform: rotate(-3deg); font-size: 44px; }
     h1 { margin: 0; font-size: clamp(21px, 5.5vw, 29px); line-height: 1.08; letter-spacing: -.6px; }
+    h2 { font-size: 14px; margin: 0 0 14px; color: #5a6c62; font-weight: 600; }
+    .japanese-site { margin-top: 36px; }
+    .japanese-site .language strong { font-size: 20px; }
     nav { display: grid; gap: 14px; }
     .language { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 25px 28px; border: 1px solid #d6d8cd; border-radius: 18px; color: inherit; text-decoration: none; background: #fffdf8; transition: background .15s, border-color .15s; }
     .language strong { font-size: 23px; }
@@ -28,12 +31,17 @@
       <span class="brand-mark" aria-hidden="true">🐹</span>
       <h1>GUINEA PIG<br>LANGUAGE</h1>
     </header>
-    <nav aria-label="Choose a language">
+    <h2>Free resources</h2>
+    <nav aria-label="Language resources">
       <a class="language" href="./resources-japanese.html"><strong>Japanese</strong><span lang="ja">日本語</span></a>
       <a class="language" href="./resources-spanish.html"><strong>Spanish</strong><span lang="es">Español</span></a>
       <a class="language" href="./resources-chinese.html"><strong>Chinese</strong><span lang="zh-Hans">中文</span></a>
       <a class="language" href="./resources-english.html"><strong>English</strong><span lang="en">English</span></a>
     </nav>
+    <section class="japanese-site" aria-labelledby="japanese-site-title">
+      <h2 id="japanese-site-title">Japanese website</h2>
+      <a class="language" href="./japanese/index.html"><strong>Nihongo Morumotto</strong><span aria-hidden="true">→</span></a>
+    </section>
   </main>
 </body>
 </html>
