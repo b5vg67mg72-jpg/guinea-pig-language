@@ -16,13 +16,16 @@
     h2 { font-size: 14px; margin: 0 0 14px; color: #5a6c62; font-weight: 600; }
     nav { display: grid; gap: 14px; }
     .language { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 25px 28px; border: 1px solid #d6d8cd; border-radius: 18px; color: inherit; text-decoration: none; background: #fffdf8; transition: background .15s, border-color .15s; }
+    .instagram { display: flex; align-items: center; gap: 8px; padding: 12px 10px 6px; color: #5a6c62; font-size: 14px; text-decoration: none; overflow-wrap: anywhere; }
+    .instagram:hover { color: #142b24; text-decoration: underline; }
+    .instagram svg { width: 19px; height: 19px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.7; }
     .language strong { font-size: 23px; }
     .language span { color: #5a6c62; font-size: 19px; }
     .language:hover { background: #ebeede; border-color: #728477; }
     .language:focus-visible { outline: 3px solid #142b24; outline-offset: 4px; }
     @media (max-width: 360px) { .brand { gap: 12px; } .brand-mark { width: 65px; height: 72px; font-size: 36px; } .language { padding: 23px 20px; } }
   </style>
-<link rel="stylesheet" href="./language-switch.css?v=20261124-2"><script src="./translations.js?v=20261124-2" defer></script><script src="./language-switch.js?v=20261124-2" defer></script></head>
+<link rel="stylesheet" href="./language-switch.css?v=20261124-2"><script src="./translations.js?v=20261124-2" defer></script><script src="./language-switch.js?v=20261124-3" defer></script></head>
 <body>
   <main><div class="display-language"><label for="display-language">Display language</label><select id="display-language" aria-label="Display language"><option value="en">English</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="es">Español</option></select></div>
     <header class="brand">
@@ -31,10 +34,16 @@
     </header>
     <h2>Choose a language</h2>
     <nav aria-label="Choose a language">
-      <a class="language" href="./japanese.html"><strong>Japanese</strong><span lang="ja">Japanese</span></a>
-      <a class="language" href="./resources-spanish.html"><strong>Spanish</strong><span lang="es">Español</span></a>
-      <a class="language" href="./resources-chinese.html"><strong>Chinese</strong><span lang="zh-Hans">Chinese</span></a>
-      <a class="language" href="./resources-english.html"><strong>English</strong><span lang="en">English</span></a>
+      <div class="language-group"><a class="language" href="./japanese.html"><strong>Japanese</strong><span lang="ja" data-no-translate>日本語</span></a>
+        <a class="instagram" href="https://www.instagram.com/learningjapanesetogether2026/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><span>@learningjapanesetogether2026</span></a>
+      </div>
+      <div class="language-group"><a class="language" href="./resources-spanish.html"><strong>Spanish</strong><span lang="es" data-no-translate>Español</span></a>
+        <a class="instagram" href="https://www.instagram.com/learningspanishtogether2026/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><span>@learningspanishtogether2026</span></a>
+      </div>
+      <a class="language" href="./resources-chinese.html"><strong>Chinese</strong><span lang="zh-Hans" data-no-translate>中文</span></a>
+      <div class="language-group"><a class="language" href="./resources-english.html"><strong>English</strong><span lang="en">English</span></a>
+        <a class="instagram" href="https://www.instagram.com/learningenglishtogether2026/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><span>@learningenglishtogether2026</span></a>
+      </div>
     </nav>
   </main>
 </body>

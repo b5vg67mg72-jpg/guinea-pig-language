@@ -6,7 +6,7 @@
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) {
     const node = walker.currentNode;
-    if (node.parentElement.closest('script, style, #display-language')) continue;
+    if (node.parentElement.closest('script, style, #display-language, [data-no-translate]')) continue;
     const key = node.textContent.trim();
     if (translations[key]) nodes.push({node, key, original: node.textContent});
   }
