@@ -8,12 +8,20 @@
     const query = search.value.trim().toLowerCase();
     let visible = 0;
     for (const card of cards) {
-      card.hidden = !((!query || card.dataset.search.includes(query)) && (!category.value || category.value === card.dataset.category));
+      const text = `${card.dataset.search} ${card.textContent}`.toLowerCase();
+      card.hidden = !((!query || text.includes(query)) && (!category.value || category.value === card.dataset.category));
       if (!card.hidden) visible++;
     }
-    count.textContent = `${visible} resource${visible === 1 ? '' : 's'}`;
+    const labels = {
+      en: `${visible} resource${visible === 1 ? '' : 's'}`,
+      'zh-CN': `${visible} 项资源`,
+      ja: `${visible} 件のリソース`,
+      es: `${visible} recurso${visible === 1 ? '' : 's'}`
+    };
+    count.textContent = labels[document.documentElement.lang] || labels.en;
     empty.hidden = visible !== 0;
   }
   search.addEventListener('input', filter);
   category.addEventListener('change', filter);
+  document.addEventListener('displaylanguagechange', filter);
 })();

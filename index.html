@@ -22,18 +22,18 @@
     .language:focus-visible { outline: 3px solid #142b24; outline-offset: 4px; }
     @media (max-width: 360px) { .brand { gap: 12px; } .brand-mark { width: 65px; height: 72px; font-size: 36px; } .language { padding: 23px 20px; } }
   </style>
-</head>
+<link rel="stylesheet" href="./language-switch.css?v=20261124-1"><script src="./translations.js?v=20261124-1" defer></script><script src="./language-switch.js?v=20261124-1" defer></script></head>
 <body>
-  <main>
+  <main><div class="display-language"><label for="display-language">Display language</label><select id="display-language" aria-label="Display language"><option value="en">English</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="es">Español</option></select></div>
     <header class="brand">
       <span class="brand-mark" aria-hidden="true">🐹</span>
       <h1>GUINEA PIG<br>LANGUAGE</h1>
     </header>
     <h2>Choose a language</h2>
     <nav aria-label="Choose a language">
-      <a class="language" href="./japanese.html"><strong>Japanese</strong><span lang="ja">日本語</span></a>
+      <a class="language" href="./japanese.html"><strong>Japanese</strong><span lang="ja">Japanese</span></a>
       <a class="language" href="./resources-spanish.html"><strong>Spanish</strong><span lang="es">Español</span></a>
-      <a class="language" href="./resources-chinese.html"><strong>Chinese</strong><span lang="zh-Hans">中文</span></a>
+      <a class="language" href="./resources-chinese.html"><strong>Chinese</strong><span lang="zh-Hans">Chinese</span></a>
       <a class="language" href="./resources-english.html"><strong>English</strong><span lang="en">English</span></a>
     </nav>
   </main>
